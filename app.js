@@ -14,22 +14,17 @@ function showDisplayButton() {
 
 rollBtn.addEventListener("click", function () {
   let diceNum = Math.floor(Math.random() * 6 + 1);
-
-  if (player1Turn === true) {
     player1Dice.textContent = diceNum;
     player1Dice.classList.remove("active");
     player1Score = player1Score + diceNum;
     player1Scoreboard.textContent = player1Score;
-  } 
-
   if (player1Score >= 20) {
-    message.textContent = "player 1 has won!! 🎉";
+    message.textContent = "Well Done You've Won 🎉";
     showDisplayButton();
   } else if (diceNum === 1) {
-    message.textContent = "You Lose 💀💀💀";
+    message.textContent = "GAME OVER!!!:    You Lose!   💀😈💀😈💀";
     showDisplayButton();
   }
-  player1Turn = !player1Turn;
 });
 
 resetBtn.addEventListener("click", function () {
@@ -40,7 +35,7 @@ function reset() {
   console.log("reset");
   resetBtn.style.display = "none";
   rollBtn.style.display = "block";
-  message.textContent = "player 1 turn";
+  message.textContent = "Dare to try Dare to Win?";
   player1Score = 0;
   player1Scoreboard.textContent = 0;
   player1Turn = true;

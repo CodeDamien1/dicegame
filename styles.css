@@ -58,14 +58,15 @@ button {
 
 #rollBtn {
   background-color: red;
+
 }
 
 #resetBtn {
-  background-color: red;
+  background-color: rgb(136, 0, 255);
 }
 
 button:focus {
-  outline: none;
+  outline: si;
 }
 
 #resetBtn {
