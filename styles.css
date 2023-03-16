@@ -1,0 +1,77 @@
+html, body {
+  --color-1: #000000;
+  --color-2: #dcedc1;
+  --color-3: #ffd3b6;
+  --color-4: #ffaaa5;
+  --color-5: #ff8b94;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-top: 300px;
+  background-image: url('https://e0.pxfuel.com/wallpapers/737/1022/desktop-wallpaper-patterns-dark-dice-skull-bones.jpg');
+  background-position: center;
+  background-size: fill;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgb(38, 38, 38);
+  box-shadow: -2px 6px 18px 3px rgba(249, 247, 247, 0.75);
+  padding: 50px;
+}
+
+.players {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.dice {
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(0, 48, 131);
+  margin: 0 auto;
+  font-size: 80px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+
+button {
+  color: #ffffff;
+  padding: 20px 30px;
+  font-size: 20px;
+  margin: 40px auto;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#rollBtn {
+  background-color: red;
+}
+
+#resetBtn {
+  background-color: red;
+}
+
+button:focus {
+  outline: none;
+}
+
+#resetBtn {
+  display: none;
+}
+
+.active {
+  box-shadow: -2px 6px 18px 3px rgba(0, 0, 0, 0.75);
+}
